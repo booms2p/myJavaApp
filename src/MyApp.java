@@ -7,6 +7,7 @@ public class MyApp {
 //		ConnectDb.delete();
 	
 //		ConnectDb.update();
+		
 		ConnectDb.query();
 	}
 }
