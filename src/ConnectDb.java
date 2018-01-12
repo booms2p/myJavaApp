@@ -95,7 +95,7 @@ public class ConnectDb {
 			
 			s = connect.createStatement();
 			
-			String insertData = "INSERT INTO eplclub (id, clubname, stadium, capacity, yearformed) VALUES ('3','Liverpool','Anfield','54074','0000')";
+			String insertData = "INSERT INTO eplclub (id, clubname, stadium, capacity, lastedeplchamp) VALUES ('3','Liverpool','Anfield','54074','0000')";
 			s.execute(insertData);
 			System.out.println("Insert data successful.");
 			
@@ -134,7 +134,7 @@ public class ConnectDb {
 //			String queryData = "SELECT * FROM eplclub WHERE id = " + id;
 //			ResultSet result = s.executeQuery(queryData);
 //			if (result.getString("id") == id) {
-				String updateData = "UPDATE eplclub SET yearformed = " + year + " WHERE id = " + id;
+				String updateData = "UPDATE eplclub SET lastedeplchamp = " + year + " WHERE id = " + id;
 				s.execute(updateData);
 				System.out.println("Update successful.");
 				System.out.println("");

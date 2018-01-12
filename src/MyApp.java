@@ -2,11 +2,11 @@ public class MyApp {
 	public static void main (String[] args) {
 //		ConnectDb.query();
 		
-		ConnectDb.insert();
+//		ConnectDb.insert();
 		
 //		ConnectDb.delete();
-		
-		ConnectDb.update();
+	
+//		ConnectDb.update();
 		ConnectDb.query();
 	}
 }

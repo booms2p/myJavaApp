@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 12, 2018 at 09:00 AM
+-- Generation Time: Jan 12, 2018 at 09:55 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -33,17 +33,16 @@ CREATE TABLE `eplclub` (
   `clubname` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `stadium` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `capacity` int(11) NOT NULL,
-  `yearlastedchamp` year(4) NOT NULL
+  `lastedeplchamp` year(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `eplclub`
 --
 
-INSERT INTO `eplclub` (`id`, `clubname`, `stadium`, `capacity`, `yearlastedchamp`) VALUES
-(1, 'Manchester United', 'Old Trafford', 75643, 0000),
-(2, 'Arsenal', 'Emirates Stadium', 60432, 0000),
-(3, 'Liverpool', 'Anfield', 54074, 0000);
+INSERT INTO `eplclub` (`id`, `clubname`, `stadium`, `capacity`, `lastedeplchamp`) VALUES
+(1, 'Manchester United', 'Old Trafford', 75643, 2013),
+(2, 'Arsenal', 'Emirates Stadium', 60432, 2004);
 
 --
 -- Indexes for dumped tables
